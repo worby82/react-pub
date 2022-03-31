@@ -1,0 +1,13 @@
+.cocktail-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  column-gap: 32px;
+  row-gap: 28px;
+}
+@media screen and (min-width: 608px) {
+  .cocktail-list {
+    justify-content: start;
+  }
+}

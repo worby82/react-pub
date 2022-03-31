@@ -1,0 +1,38 @@
+.tag {
+  display: flex;
+  overflow: auto;
+  list-style: none;
+  margin: auto -33px -20px;
+  padding: 0 30px;
+  scrollbar-width: none;
+  position: relative;
+  z-index: 1010;
+  column-gap: 8px;
+  padding-top: 40px;
+}
+.tag__item {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 21px;
+  color: #C4C1CF;
+  padding: 8px 18px 8px;
+  border-radius: 32px;
+  border: 1px solid transparent;
+  transition: border-color 0.3s;
+}
+.tag__item--active {
+  border-color: #C4C1CF;
+  color: #FFFFFF;
+}
+.tag__item:hover {
+  cursor: pointer;
+  border-color: #C4C1CF;
+  transition: border-color 0.3s;
+}
+.tag::-webkit-scrollbar {
+  width: 0;
+  padding: 0;
+  height: 0;
+}
