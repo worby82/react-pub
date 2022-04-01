@@ -1,7 +1,6 @@
 import React from "react";
-import Image from "./Image.jsx";
 import '../css/cocktail-list.css'
-import Cocktail_card from "./Cocktail_card.jsx";
+import Cocktail_card from "./Cocktail_card";
 
 const Cocktail_list = (props) => {
     const cardData = props.cardData;

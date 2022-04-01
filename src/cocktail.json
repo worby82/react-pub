@@ -5,7 +5,12 @@
     "alcoholPresent": "30%",
     "webpPrev" : "../images/blackberry.webp",
     "jpgPrev" : "../images/blackberry.jpg",
-    "link" : "../blackberry/"
+    "link" : "../blackberry/",
+    "tags" : [
+      "Хит",
+      "Сладкие",
+      "Лонг"
+    ]
   },
   {
     "name": "black",
@@ -13,7 +18,12 @@
     "alcoholPresent": "30%",
     "webpPrev" : "../images/blackberry.webp",
     "jpgPrev" : "../images/blackberry.jpg",
-    "link" : "#"
+    "link" : "#",
+    "tags" : [
+      "Новинки",
+      "Сладкие",
+      "Лонг"
+    ]
   },
   {
     "name": "Мохито",
@@ -21,7 +31,12 @@
     "alcoholPresent": "40%",
     "webpPrev" : "../images/mohito.webp",
     "jpgPrev" : "../images/mohito.jpg",
-    "link" : "#"
+    "link" : "#",
+    "tags" : [
+      "Хит",
+      "Крепкие",
+      "Шот"
+    ]
   },
   {
     "name": "Blackberry",
@@ -29,7 +44,11 @@
     "alcoholPresent": "30%",
     "webpPrev" : "../images/blackberry.webp",
     "jpgPrev" : "../images/blackberry.jpg",
-    "link" : "../blackberry/"
+    "link" : "#",
+    "tags" : [
+      "Сладкие",
+      "Лонг"
+    ]
   },
   {
     "name": "моголь",
@@ -37,6 +56,11 @@
     "alcoholPresent": "40%",
     "webpPrev" : "../images/mohito.webp",
     "jpgPrev" : "../images/mohito.jpg",
-    "link" : "#"
+    "link" : "#",
+    "tags" : [
+      "Новинки",
+      "Крепкие",
+      "Шот"
+    ]
   }
 ]
