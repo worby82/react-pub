@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "./Image.jsx";
+import Image from "./Image";
 import '../css/cocktail-card.css'
 import '../css/text.css'
 

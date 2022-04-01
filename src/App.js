@@ -4,16 +4,21 @@ import Cocktail_list from "./components/Cocktail_list";
 import Tag from "./components/Tag";
 
 function App() {
-  const [data,setData] = useState(Cocktail_data);
+  let [data,setData] = useState(Cocktail_data);
   // const data = Cocktail_data;
   // let newData = data;
-  const filterData = (filter) => {
+
+  let [filter, setFilter] = useState(0);
+
+  const filterData = (tag) => {
+    setFilter(filter = filter == tag ? 0 : tag)
+    setData([...data]=Cocktail_data )
     if (filter!=0) {
-      const newData = data.filter(data => (data.tags.filter(tags => tags === filter) == filter) == true )
-      console.log(newData);
-      const newData1 = [...data].filter(data => (data.tags.filter(tags => tags === filter) == filter) == true )
-      console.log(newData1);
-      // setData([...data].filter(data => (data.tags.filter(tags => tags === filter) == filter) == true ))
+      // const newData = data.filter(data => (data.tags.filter(tags => tags === filter) == filter) == true )
+      // console.log(newData);
+      // const newData1 = [...data].filter(data => (data.tags.filter(tags => tags === filter) == filter) == true )
+      // console.log(newData1);
+      setData([...data].filter(data => (data.tags.filter(tags => tags === filter) == filter) == true ))
     }
   }
   // console.log(newData);
@@ -28,7 +33,7 @@ function App() {
               <h1 className="title">Главная</h1>
               <time className="text" dateTime={currDateTime}>{currDate.toLocaleString("ru",{day: 'numeric', month: 'long'})} {currDate.getFullYear()}</time>
           </div>
-          <Tag filterData={filterData}/>
+          <Tag filterData={filterData} filter={filter}/>
           <svg className="logo" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink">
             <use xlinkHref="images/sprite.svg#logo"></use>
           </svg>

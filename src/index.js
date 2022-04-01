@@ -2,8 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 // import './style.css'
-import './css/style.css'
 import './css/fonts.css'
+import './css/style.css'
 import './css/btn.css'
 import './css/fonts.css'
 import './css/fonts.css'
