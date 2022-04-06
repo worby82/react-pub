@@ -3,64 +3,149 @@
     "name": "Blackberry",
     "shortDesciption": "Освежающий напиток",
     "alcoholPresent": "30%",
-    "webpPrev" : "../images/blackberry.webp",
-    "jpgPrev" : "../images/blackberry.jpg",
-    "link" : "../blackberry/",
+    "webpPrev" : "/react-pub/images/blackberry.webp",
+    "jpgPrev" : "/react-pub/images/blackberry.jpg",
+    "webpDetail" : "/react-pub/images/blackberry_1152x1056.webp",
+    "jpgDetail" : "/react-pub/images/blackberry_1152x1056.jpg",
+    "link" : "0",
     "tags" : [
       "Хит",
       "Сладкие",
       "Лонг"
+    ],
+    "ingredients" : {
+      "Джин": "40 мл",
+      "Шнапс яблоко": "10 мл",
+      "Ликёр кассис": "25 мл",
+      "Сок лимона": "25 мл",
+      "Жасмин лемонграсс": "15 мл",
+      "Ежевика свежая": "2 шт",
+      "Белок": "20 мл"
+    },
+    "cook" : [
+      "Ежевику (одну штуку) размять в шейкере, засыпать лёд на 2/3 шейкера.",
+      "Добавить джин, шнапс, ликёр, сок, жасмин лемонграсс и белок.",
+      "Тщательно взбить и процедить в бокал.",
+      "Украсить ежевикой."
     ]
   },
   {
     "name": "black",
     "shortDesciption": "Для проверки",
     "alcoholPresent": "30%",
-    "webpPrev" : "../images/blackberry.webp",
-    "jpgPrev" : "../images/blackberry.jpg",
-    "link" : "#",
+    "webpPrev" : "/react-pub/images/blackberry.webp",
+    "jpgPrev" : "/react-pub/images/blackberry.jpg",
+    "webpDetail" : "/react-pub/images/blackberry_1152x1056.webp",
+    "jpgDetail" : "/react-pub/images/blackberry_1152x1056.jpg",
+    "link" : "1",
     "tags" : [
       "Новинки",
       "Сладкие",
       "Лонг"
+    ],
+    "ingredients" : {
+      "Джин": "40 мл",
+      "Шнапс яблоко": "10 мл",
+      "Ликёр кассис": "25 мл",
+      "Сок лимона": "25 мл",
+      "Жасмин лемонграсс": "15 мл",
+      "Ежевика свежая": "2 шт",
+      "Белок": "20 мл"
+    },
+    "cook" : [
+      "Ежевику (одну штуку) размять в шейкере, засыпать лёд на 2/3 шейкера.",
+      "Добавить джин, шнапс, ликёр, сок, жасмин лемонграсс и белок.",
+      "Тщательно взбить и процедить в бокал.",
+      "Украсить ежевикой."
     ]
   },
   {
     "name": "Мохито",
     "shortDesciption": "Освежающий напиток",
     "alcoholPresent": "40%",
-    "webpPrev" : "../images/mohito.webp",
-    "jpgPrev" : "../images/mohito.jpg",
-    "link" : "#",
+    "webpPrev" : "/react-pub/images/mohito.webp",
+    "jpgPrev" : "/react-pub/images/mohito.jpg",
+    "webpDetail" : "/react-pub/images/mohito.webp",
+    "jpgDetail" : "/react-pub/images/mohito.jpg",
+    "link" : "2",
     "tags" : [
       "Хит",
       "Крепкие",
       "Шот"
+    ],
+    "ingredients" : {
+      "Джин": "40 мл",
+      "Шнапс яблоко": "10 мл",
+      "Ликёр кассис": "25 мл",
+      "Сок лимона": "25 мл",
+      "Жасмин лемонграсс": "15 мл",
+      "Ежевика свежая": "2 шт",
+      "Белок": "20 мл"
+    },
+    "cook" : [
+      "Ежевику (одну штуку) размять в шейкере, засыпать лёд на 2/3 шейкера.",
+      "Добавить джин, шнапс, ликёр, сок, жасмин лемонграсс и белок.",
+      "Тщательно взбить и процедить в бокал.",
+      "Украсить ежевикой."
     ]
   },
   {
     "name": "Blackberry",
     "shortDesciption": "Освежающий напиток",
     "alcoholPresent": "30%",
-    "webpPrev" : "../images/blackberry.webp",
-    "jpgPrev" : "../images/blackberry.jpg",
-    "link" : "#",
+    "webpPrev" : "/react-pub/images/blackberry.webp",
+    "jpgPrev" : "/react-pub/images/blackberry.jpg",
+    "webpDetail" : "/react-pub/images/blackberry_1152x1056.webp",
+    "jpgDetail" : "/react-pub/images/blackberry_1152x1056.jpg",
+    "link" : "3",
     "tags" : [
       "Сладкие",
       "Лонг"
+    ],
+    "ingredients" : {
+      "Джин": "40 мл",
+      "Шнапс яблоко": "10 мл",
+      "Ликёр кассис": "25 мл",
+      "Сок лимона": "25 мл",
+      "Жасмин лемонграсс": "15 мл",
+      "Ежевика свежая": "2 шт",
+      "Белок": "20 мл"
+    },
+    "cook" : [
+      "Ежевику (одну штуку) размять в шейкере, засыпать лёд на 2/3 шейкера.",
+      "Добавить джин, шнапс, ликёр, сок, жасмин лемонграсс и белок.",
+      "Тщательно взбить и процедить в бокал.",
+      "Украсить ежевикой."
     ]
   },
   {
     "name": "моголь",
     "shortDesciption": "Для проверки",
     "alcoholPresent": "40%",
-    "webpPrev" : "../images/mohito.webp",
-    "jpgPrev" : "../images/mohito.jpg",
-    "link" : "#",
+    "webpPrev" : "/react-pub/images/mohito.webp",
+    "jpgPrev" : "/react-pub/images/mohito.jpg",
+    "webpDetail" : "/react-pub/images/mohito.webp",
+    "jpgDetail" : "/react-pub/images/mohito.jpg",
+    "link" : "4",
     "tags" : [
       "Новинки",
       "Крепкие",
       "Шот"
+    ],
+    "ingredients" : {
+      "Джин": "40 мл",
+      "Шнапс яблоко": "10 мл",
+      "Ликёр кассис": "25 мл",
+      "Сок лимона": "25 мл",
+      "Жасмин лемонграсс": "15 мл",
+      "Ежевика свежая": "2 шт",
+      "Белок": "20 мл"
+    },
+    "cook" : [
+      "Ежевику (одну штуку) размять в шейкере, засыпать лёд на 2/3 шейкера.",
+      "Добавить джин, шнапс, ликёр, сок, жасмин лемонграсс и белок.",
+      "Тщательно взбить и процедить в бокал.",
+      "Украсить ежевикой."
     ]
   }
 ]

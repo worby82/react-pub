@@ -1,7 +1,8 @@
 .detail {
-  height: 100%;
+  height: auto;
   display: flex;
   flex-wrap: wrap;
+  min-height: 100%;
 }
 .detail__image {
   position: fixed;
