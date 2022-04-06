@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/react-pub/static/css/main.f11d47e4.css",
-    "main.js": "/react-pub/static/js/main.ab90d50e.js",
+    "main.js": "/react-pub/static/js/main.6b583284.js",
     "static/media/Roboto-Light.woff": "/react-pub/static/media/Roboto-Light.fc8c4bd94c915102dd03.woff",
     "static/media/Roboto-Bold.woff": "/react-pub/static/media/Roboto-Bold.dcde5215050d94242129.woff",
     "static/media/Roboto-Bold.woff2": "/react-pub/static/media/Roboto-Bold.c4def6cfc0a0eb1b7b16.woff2",
     "static/media/Roboto-Light.woff2": "/react-pub/static/media/Roboto-Light.add8c461dba6468c1c77.woff2",
     "index.html": "/react-pub/index.html",
     "main.f11d47e4.css.map": "/react-pub/static/css/main.f11d47e4.css.map",
-    "main.ab90d50e.js.map": "/react-pub/static/js/main.ab90d50e.js.map"
+    "main.6b583284.js.map": "/react-pub/static/js/main.6b583284.js.map"
   },
   "entrypoints": [
     "static/css/main.f11d47e4.css",
-    "static/js/main.ab90d50e.js"
+    "static/js/main.6b583284.js"
   ]
 }
