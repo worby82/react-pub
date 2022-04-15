@@ -1,5 +1,6 @@
 import React from "react";
 import { text } from "./Bem";
+import '../css/text.css'
 
 const Time = () => {
     const currDate = new Date();
