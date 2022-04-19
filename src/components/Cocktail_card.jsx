@@ -11,7 +11,7 @@ const Cocktail_card = (props) => {
         return (
             <li className={cocktailCard()} key={id}>
                 <Image image={{ jpgPrev: card.jpgPrev, webpPrev: card.webpPrev, alt: card.name }} width={'100%'} height={'auto'} />
-                <Link className={cocktailCard('inner')} to={card.name != 'Пусто' ? `/react-pub/detail/${card.link}` : '#'}>
+                <Link className={cocktailCard('inner')} to={card.name != 'Пусто' ? `/react-pub/detail/${card.id}` : '#'}>
                     {
                         card.alcoholPresent
                             ?
@@ -22,7 +22,7 @@ const Cocktail_card = (props) => {
                             : <Text cn={{ 'no-result': true }} value='Ничего не найдено' />
                     }
                     <Title lvl='2' cn={{ 'cocktail': true }} value={card.name} />
-                    <Text value={card.shortDesciption} />
+                    <Text value={card.shortDescription} />
                 </Link>
             </li>
         )
