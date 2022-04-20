@@ -16,15 +16,15 @@ function Home() {
   // const [isLoad, setIsLoad] = useState(false);
 
   useEffect(() => {
+    async function fetchData() {
+      // setIsLoad(true);
+      const card = await CoctailData.getAll();
+      setDefaultData([...card]);
+      // setIsLoad(false);
+      setData([...card])
+    }
     fetchData();
   }, [])
-  async function fetchData() {
-    // setIsLoad(true);
-    const card = await CoctailData.getAll();
-    setDefaultData([...card]);
-    // setIsLoad(false);
-    setData([...card])
-  }
   const filterData = (tag) => {
     setFilter(filter == tag ? 0 : tag)
     setData([...defaultData])

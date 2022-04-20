@@ -12,12 +12,12 @@ function Search() {
     const [searchValue, setSearchValue] = useState('');
 
     useEffect(() => {
+        async function fetchData() {
+            const card = await CoctailData.getAll();
+            setData([...card])
+        }
         fetchData();
     }, [])
-    async function fetchData() {
-        const card = await CoctailData.getAll();
-        setData([...card])
-    }
 
     const searchCoctail = useMemo(() => {
         if (searchValue != '') {
