@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useMemo, useRef, useState } from "react";
 import CoctailData from "../API/CoctailData";
 // import Cocktail_data from "../cocktail.json"
 import { app, container, main } from "../components/Bem";
@@ -10,6 +10,7 @@ import Title from "../components/Title";
 function Search() {
     const [data, setData] = useState(null);
     const [searchValue, setSearchValue] = useState('');
+    const searchInput = useRef(null)
 
     useEffect(() => {
         async function fetchData() {
@@ -51,7 +52,7 @@ function Search() {
                     }
                 </div>
             </main>
-            <Footer searchValue={searchValue} setSearchValue={e => setSearchValue(e.target.value)} />
+            <Footer searchInput={searchInput} setSearchValue={() => setSearchValue(searchInput.current.value)} />
         </div>
     );
 }

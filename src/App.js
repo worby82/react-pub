@@ -8,7 +8,7 @@ function App() {
   return(
     <BrowserRouter>
       <Routes>
-        <Route path="/react-pub/" element={<Home />}/>
+        <Route exact path="/react-pub/" element={<Home />}/>
         <Route path="/react-pub/search/" element={<Search />} />
         <Route path="/react-pub/detail/:id" element={<Detail />} />
       </Routes>
