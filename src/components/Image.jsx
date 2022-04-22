@@ -1,8 +1,8 @@
 import React from "react";
 import '../css/image.css'
-import { image } from "./Bem";
+import { imageCn } from "./Bem";
 
-const Image = (props) => {
+const Image = ({detail , image, width, height}) => {
     const isHttpURL = (imageSrc) => {
         if(imageSrc.startsWith('http:')){
             return imageSrc.slice(5);
@@ -10,9 +10,9 @@ const Image = (props) => {
         return imageSrc;
     }
     return (
-        <picture className={image({ detail: props.detail })}>
-            <source srcSet={isHttpURL(props.image.webpPrev)} type="image/webp" />
-            <img src={isHttpURL(props.image.jpgPrev)} alt={props.image.alt} width={props.width} height={props.height} />
+        <picture className={imageCn({ detail: detail })}>
+            <source srcSet={isHttpURL(image.webpPrev)} type="image/webp" />
+            <img src={isHttpURL(image.jpgPrev)} alt={image.alt} width={width} height={height} />
         </picture>
     )
 }

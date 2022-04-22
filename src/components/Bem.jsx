@@ -13,6 +13,6 @@ export  const text = cn('text');
 export  const title = cn('title');
 export  const cocktailList = cn('cocktail-list');
 export  const cocktailCard = cn('cocktail-card');
-export  const image = cn('image');
+export  const imageCn = cn('image');
 export  const search = cn('search');
 export  const detail = cn('detail');

@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from "react";
+import React, { useEffect, useState } from "react";
 import CoctailData from "../API/CoctailData";
 // import Cocktail_data from "../cocktail.json"
 import * as cn from "../components/Bem";
@@ -9,7 +9,7 @@ import Title from "../components/Title";
 
 
 
-function Home() {
+const Home = () => {
   const [defaultData, setDefaultData] = useState(null);
   const [data, setData] = useState(null);
   const [filter, setFilter] = useState(0);

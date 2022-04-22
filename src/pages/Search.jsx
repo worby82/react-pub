@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import CoctailData from "../API/CoctailData";
 // import Cocktail_data from "../cocktail.json"
 import { app, container, main } from "../components/Bem";
@@ -7,10 +7,11 @@ import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Title from "../components/Title";
 
-function Search() {
+const Search = () => {
     const [data, setData] = useState(null);
-    const [searchValue, setSearchValue] = useState('');
     const searchInput = useRef(null)
+    const [searchValue, setSearchValue] = useState('');
+    const [resultData, setResultData] = useState(null);
 
     useEffect(() => {
         async function fetchData() {
@@ -20,12 +21,15 @@ function Search() {
         fetchData();
     }, [])
 
-    const searchCoctail = useMemo(() => {
-        if (searchValue != '') {
-            return [...data].filter(data => data.name.toLowerCase().includes(searchValue.toLowerCase()));
-        }
-    }, [searchValue, data])
+    const searchCoctail = () => {
+        setSearchValue(searchInput.current.value)
+    }
 
+    useEffect(()=>{
+        if (searchValue != '') {
+            setResultData([...data.filter(data => data.name.toLowerCase().includes(searchValue.toLowerCase()))])
+        }
+    }, [resultData,searchValue])
 
     return (
         <div className={app()}>
@@ -36,8 +40,9 @@ function Search() {
                         searchValue != ''
                             ?
                             <Cocktail_list cardData={
-                                searchCoctail.length
-                                    ? searchCoctail
+                                // searchCoctail.length
+                                resultData
+                                    ? resultData
                                     : [
                                         {
                                             name: "Пусто",
@@ -52,7 +57,7 @@ function Search() {
                     }
                 </div>
             </main>
-            <Footer searchInput={searchInput} setSearchValue={() => setSearchValue(searchInput.current.value)} />
+            <Footer searchInput={searchInput} setSearchValue={() => searchCoctail()} />
         </div>
     );
 }

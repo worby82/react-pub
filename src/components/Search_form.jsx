@@ -5,7 +5,7 @@ import '../css/search.css'
 
 const Search_form = ({ setSearchValue, searchInput }) => {
     return (
-        <form className={search()} action="" method="get" onSubmit={e => { e.preventDefault(); }}>
+        <form className={search()} onSubmit={e => { e.preventDefault(); }}>
             <input
                 className={search('input')}
                 type="text"

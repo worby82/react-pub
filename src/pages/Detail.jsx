@@ -9,7 +9,7 @@ import Title from "../components/Title";
 import Text from "../components/Text";
 import CoctailData from "../API/CoctailData";
 
-function Home() {
+const Detail = () => {
     const params = useParams();
     const [data, setData] = useState(null);
     // const [isLoad, setIsLoad] = useState(true);
@@ -18,7 +18,6 @@ function Home() {
         async function fetchData () {
             // setIsLoad(true);
             const card = await CoctailData.getDetail(params.id);
-            console.log(card);
             setData(card);
             // setIsLoad(false);
         }
@@ -63,4 +62,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default Detail;
