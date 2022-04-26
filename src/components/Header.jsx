@@ -8,7 +8,7 @@ import Title from "./Title";
 import '../css/logo.css'
 import '../css/header.css'
 
-const Header = ({ titlePage, filter, filterData, isHome }) => {
+const Header = ({ titlePage, filter, isHome }) => {
     return (
         <header className={header()}>
             <div className={container()}>
@@ -17,13 +17,11 @@ const Header = ({ titlePage, filter, filterData, isHome }) => {
                     <Time />
                 </div>
                 {
-                    filterData && <Tag filterData={filterData} filter={filter} />
+                    filter && <Tag />
                 }
                 {
                     !isHome
-                        ? <Link to="/react-pub/">
-                            <Icon cn={logo()} icon='logo' />
-                        </Link>
+                        ? <Link to="/react-pub/"><Icon cn={logo()} icon='logo' /></Link>
                         : <Icon cn={logo()} icon='logo' />
                 }
             </div>

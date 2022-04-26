@@ -3,10 +3,10 @@ import '../css/cocktail-list.css'
 import { cocktailList } from "./Bem";
 import Cocktail_card from "./Cocktail_card";
 
-const Cocktail_list = ({cardData}) => {
+const Cocktail_list = () => {
     return (
         <ul className={cocktailList()}>
-            <Cocktail_card cardData={cardData} />
+            <Cocktail_card />
         </ul>
     )
 }

@@ -1,49 +1,31 @@
-import React, { useEffect, useState } from "react";
-import CoctailData from "../API/CoctailData";
-// import Cocktail_data from "../cocktail.json"
+import React, { useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import * as cn from "../components/Bem";
 import Cocktail_list from "../components/Cocktail_list";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Title from "../components/Title";
+import { fetchData } from "../store/reducers/dataSlice";
 
 
 
 const Home = () => {
-  const [defaultData, setDefaultData] = useState(null);
-  const [data, setData] = useState(null);
-  const [filter, setFilter] = useState(0);
-  // const [isLoad, setIsLoad] = useState(false);
+  const dispatch = useDispatch();
+  const status = useSelector(state => state.data.status)
 
   useEffect(() => {
-    async function fetchData() {
-      // setIsLoad(true);
-      const card = await CoctailData.getAll();
-      setDefaultData([...card]);
-      // setIsLoad(false);
-      setData([...card])
-    }
-    fetchData();
-  }, [])
-  const filterData = (tag) => {
-    setFilter(filter == tag ? 0 : tag)
-    setData([...defaultData])
-  }
-  useEffect(()=>{
-    if (filter != 0) {
-      setData([...defaultData.filter(data => (data.tags.filter(tags => tags === filter) == filter) == true)])
-    }
-  },[filter])
+    dispatch(fetchData())
+  }, [dispatch])
 
   return (
     <div className={cn.app()}>
-      <Header titlePage={'Главная'} filterData={filterData} filter={filter} isHome />
+      <Header titlePage={'Главная'} filter isHome />
       <main className={cn.main()}>
         <div className={cn.container()}>
           {
-            data==null
-              ? <Title lvl="2" cn={{ 'no-result': true }} value="Загрузка" />
-              : <Cocktail_list cardData={data} />
+            status !== 'fulfilled'
+              ? <Title lvl="2" cn={{ 'no-result': true }} value={status} />
+              : <Cocktail_list />
           }
         </div>
       </main>

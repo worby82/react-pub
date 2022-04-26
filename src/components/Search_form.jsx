@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useRef } from "react";
 import { btn, search } from "./Bem";
 import Icon from "./Icon";
 import '../css/search.css'
+import { useDispatch } from "react-redux";
+import { searchCoctail } from "../store/reducers/dataSlice";
 
-const Search_form = ({ setSearchValue, searchInput }) => {
+const Search_form = () => {
+    const searchInput = useRef(null)
+    const dispatch = useDispatch();
     return (
         <form className={search()} onSubmit={e => { e.preventDefault(); }}>
             <input
@@ -11,7 +15,7 @@ const Search_form = ({ setSearchValue, searchInput }) => {
                 type="text"
                 placeholder="Поиск"
                 ref={searchInput}
-                onChange={setSearchValue} 
+                onChange={() => dispatch(searchCoctail(searchInput.current.value))}
             />
             <button className={btn({ 'search-form': true })} type="button">
                 <Icon cn={btn('icon', { search: true })} icon='search' />
