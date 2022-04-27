@@ -26,13 +26,20 @@
   border-color: #C4C1CF;
   color: #FFFFFF;
 }
-.tag__item:hover {
+/* .tag__item:hover {
   cursor: pointer;
   border-color: #C4C1CF;
   transition: border-color 0.3s;
-}
+} */
 .tag::-webkit-scrollbar {
   width: 0;
   padding: 0;
   height: 0;
+}
+@media(hover: hover) and (pointer: fine) {
+  .tag__item:hover {
+    cursor: pointer;
+    border-color: #C4C1CF;
+    transition: border-color 0.3s;
+  }
 }

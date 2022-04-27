@@ -45,9 +45,9 @@ export const dataSlice = createSlice({
     },
     filterData(state, action) {
       let tag = action.payload;
-      state.filter = state.filter == tag ? 0 : tag;
+      state.filter = state.filter === tag ? 0 : tag;
       state.data = state.defaultData;
-      if (state.filter != 0) {
+      if (state.filter !== 0) {
         state.data = state.defaultData.filter(data => (data.tags.filter(tags => tags === state.filter) == state.filter) == true);
       }
     },
@@ -55,7 +55,8 @@ export const dataSlice = createSlice({
       state.searchValue = action.payload;
       state.data = state.defaultData;
       if (state.searchValue != '') {
-        state.data = state.defaultData.filter(data => data.name.toLowerCase().includes(state.searchValue.toLowerCase()));
+        // state.data = state.defaultData.filter(data => data.name.toLowerCase().includes(state.searchValue.toLowerCase()));
+        state.data = state.defaultData.filter(data => data.name.toLowerCase().startsWith(state.searchValue.toLowerCase()));
         if (state.data.length === 0) {
           state.data = [
             {
@@ -72,6 +73,9 @@ export const dataSlice = createSlice({
   extraReducers: {
     [fetchData.pending]: (state) => {
       state.status = "Загрузка";
+      if (state.searchValue != '') {
+        state.searchValue = '';
+      }
     },
     [fetchData.fulfilled]: (state, action) => {
       state.status = "fulfilled";
