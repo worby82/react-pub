@@ -17,7 +17,7 @@ const Search_form = () => {
                 ref={searchInput}
                 onChange={() => dispatch(searchCoctail(searchInput.current.value))}
             />
-            <button className={btn({ 'search-form': true })} type="button">
+            <button className={btn({ 'search-form': true })} type="button" aria-label="Поиск">
                 <Icon cn={btn('icon', { search: true })} icon='search' />
             </button>
         </form>

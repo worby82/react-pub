@@ -12,7 +12,7 @@ const Image = ({detail , image, width, height}) => {
     return (
         <picture className={imageCn({ detail: detail })}>
             <source srcSet={isHttpURL(image.webpPrev)} type="image/webp" />
-            <img src={isHttpURL(image.jpgPrev)} alt={image.alt} width={width} height={height} />
+            <img loading="eager" src={isHttpURL(image.jpgPrev)} alt={image.alt} width={width} height={height} />
         </picture>
     )
 }
