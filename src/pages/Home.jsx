@@ -15,7 +15,7 @@ const Home = () => {
 
   useEffect(() => {
     dispatch(fetchData())
-  }, [dispatch])
+  }, [])
 
   return (
     <div className={cn.app()}>

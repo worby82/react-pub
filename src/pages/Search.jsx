@@ -13,7 +13,7 @@ const Search = () => {
 
     useEffect(() => {
         dispatch(fetchData())
-    }, [dispatch])
+    }, [])
 
     return (
         <div className={app()}>

@@ -17,7 +17,7 @@ const Detail = () => {
 
     useEffect(() => {
         dispatch(fetchDetailData(params))
-    }, [dispatch])
+    }, [])
 
     return (
         <div className={app()}>

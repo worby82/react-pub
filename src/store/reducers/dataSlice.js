@@ -8,7 +8,8 @@ export const fetchData = createAsyncThunk(
         .then((res) => res.json())
         .then((data) => data);
       return response;
-    } finally {
+    } catch(err) {
+      console.log(err.message);
     }
   }
 
@@ -21,7 +22,8 @@ export const fetchDetailData = createAsyncThunk(
       const response = await fetch(`https://625d96c795cd5855d62318dc.mockapi.io/cocktail/${id}`)
         .then((res) => res.json());
       return response;
-    } finally {
+    } catch(err) {
+      console.log(err.message);
     }
   }
 )
